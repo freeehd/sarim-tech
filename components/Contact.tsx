@@ -6,7 +6,7 @@ import { motion } from "framer-motion"
 export default function Contact() {
   const [formState, setFormState] = useState({ name: "", email: "", message: "" })
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: { preventDefault: () => void }) => {
     e.preventDefault()
     // Here you would typically handle the form submission, e.g., sending an email
     console.log("Form submitted:", formState)

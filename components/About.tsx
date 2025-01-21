@@ -23,9 +23,9 @@ export default function About() {
           className="mb-8"
         >
           <p className="text-lg mb-4 font-mono">
-            I'm Sarim Ali, a passionate technologist and solutions provider with a diverse background in software
-            engineering, cloud computing, and blockchain technologies. With a Bachelor's degree in Computer Science from
-            Universiti Teknologi Malaysia, I've honed my skills across various roles, from internships to leadership
+            I&apos;m Sarim Ali, a passionate technologist and solutions provider with a diverse background in software
+            engineering, cloud computing, and blockchain technologies. With a Bachelor&apos;s degree in Computer Science from
+            Universiti Teknologi Malaysia, I&apos;ve honed my skills across various roles, from internships to leadership
             positions.
           </p>
           <p className="text-lg font-mono">

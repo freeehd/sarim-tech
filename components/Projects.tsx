@@ -29,7 +29,7 @@ const projects = [
 ]
 
 export default function Projects() {
-  const [selectedProject, setSelectedProject] = useState(null)
+  const [selectedProject, setSelectedProject] = useState<{ title: string; description: string; tags: string[] } | null>(null)
 
   return (
     <section className="py-20 px-4 bg-black text-green-400">

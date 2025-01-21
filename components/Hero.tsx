@@ -2,14 +2,15 @@
 
 import { useState, useEffect, useMemo } from "react"
 import { motion } from "framer-motion"
-import dynamic from "next/dynamic"
 import { ErrorBoundary } from "react-error-boundary"
 
 import SplineComponent from "@splinetool/react-spline"
 
 const roles = ["Solutions Architect", "Full-Stack Developer", "Cloud Expert", "Blockchain Enthusiast"]
 
-function ErrorFallback({ error, resetErrorBoundary }) {
+import { FallbackProps } from "react-error-boundary"
+
+function ErrorFallback({ error, resetErrorBoundary }: FallbackProps) {
   return (
     <div className="w-full h-full flex items-center justify-center bg-green-900 bg-opacity-20 text-green-400">
       <div>
