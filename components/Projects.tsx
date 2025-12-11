@@ -219,9 +219,9 @@ export default function Projects() {
             SYSTEM_PROJECTS
           </h2>
           <p className="text-green-500/60 font-mono text-lg max-w-2xl mx-auto">
-            // ACCESSING ARCHIVES...
+            {"// ACCESSING ARCHIVES..."}
             <br />
-            // SELECT A MODULE TO INITIATE DEEP DIVE
+            {"// SELECT A MODULE TO INITIATE DEEP DIVE"}
           </p>
         </motion.div>
 
@@ -330,7 +330,7 @@ export default function Projects() {
                 <div className="lg:col-span-2 space-y-8">
                   <section>
                     <h4 className="text-green-500 font-mono text-sm mb-4 border-b border-green-900/50 pb-2">
-                      // PROJECT_OVERVIEW
+                      {"// PROJECT_OVERVIEW"}
                     </h4>
                     <p className="text-green-100/80 leading-relaxed text-lg">{selectedProject.fullDescription}</p>
                   </section>
@@ -354,7 +354,7 @@ export default function Projects() {
 
                   <section>
                     <h4 className="text-green-500 font-mono text-sm mb-4 border-b border-green-900/50 pb-2">
-                      // KEY_FEATURES
+                      {"// KEY_FEATURES"}
                     </h4>
                     <ul className="grid md:grid-cols-2 gap-4">
                       {selectedProject.features.map((feature, i) => (
