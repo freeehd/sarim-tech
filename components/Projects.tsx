@@ -299,7 +299,7 @@ export default function Projects() {
               animate={{ scale: 1, opacity: 1 }}
               exit={{ scale: 0.95, opacity: 0 }}
               onClick={(e) => e.stopPropagation()}
-              className="bg-black border border-green-500/30 w-full max-w-5xl max-h-[90vh] overflow-y-auto rounded-2xl shadow-[0_0_50px_-10px_rgba(74,222,128,0.15)] relative custom-scrollbar"
+              className="bg-black border border-green-500/30 w-full max-w-5xl max-h-[90vh] overflow-y-auto rounded-2xl shadow-[0_0_50px_-10px_rgba(74,222,128,0.15)] relative [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-track]:bg-black [&::-webkit-scrollbar-thumb]:bg-[#1a4731] [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-thumb:hover]:bg-green-500"
             >
               {/* Modal Header */}
               <div className="sticky top-0 bg-black/95 backdrop-blur border-b border-green-900/50 p-6 md:p-8 flex justify-between items-start z-20">
@@ -405,21 +405,7 @@ export default function Projects() {
         )}
       </AnimatePresence>
 
-      <style jsx global>{`
-        .custom-scrollbar::-webkit-scrollbar {
-          width: 8px;
-        }
-        .custom-scrollbar::-webkit-scrollbar-track {
-          background: #000;
-        }
-        .custom-scrollbar::-webkit-scrollbar-thumb {
-          background: #1a4731;
-          border-radius: 4px;
-        }
-        .custom-scrollbar::-webkit-scrollbar-thumb:hover {
-          background: #22c55e;
-        }
-      `}</style>
+
     </section>
   )
 }
